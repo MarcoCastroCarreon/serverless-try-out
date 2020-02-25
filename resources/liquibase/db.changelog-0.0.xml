@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+
+	<changeSet author="mcastrodevelopment@gmail.com" id="changelog-0.0.1">
+
+		<createTable tableName="USER">
+			<column name="ID" type="BIGINT" autoIncrement="true">
+				<constraints nullable="false" primaryKey="true" />
+			</column>
+            <column name="EMAIL" type="VARCHAR(65)" >
+				<constraints nullable="false" unique="true" />
+			</column>
+            <column name="STATUS" type="VARCHAR(55)" >
+				<constraints nullable="false" />
+			</column>
+            <column name="AGE" type="INTEGER" >
+				<constraints nullable="false" />
+			</column>
+            <column name="USER_TYPE" type="VARCHAR(55)" >
+				<constraints nullable="false" />
+			</column>
+            <column name="NAME" type="VARCHAR(75)" >
+				<constraints nullable="false" />
+			</column>
+            <column name="LAST_NAME" type="VARCHAR(75)" >
+				<constraints nullable="true" />
+			</column>
+			<column name="CREATION_DATE" type="DATETIME" >
+				<constraints nullable="false" />
+			</column>
+		</createTable>
+	</changeSet>
+
+</databaseChangeLog>

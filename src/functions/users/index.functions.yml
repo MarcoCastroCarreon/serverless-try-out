@@ -1,0 +1,8 @@
+createUser:
+    handler: ${self:custom.prefix_module, 'src/functions/users/'}create.handler
+    environment: ${file(${self:custom.env}):CREATE_USER_ENV}
+    events:
+        - http:
+            method: post
+            path: users
+            cors: true
