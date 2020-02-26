@@ -1,4 +1,4 @@
 {
-    "APP.COMMON.EXCEPTION.500": "Internal Server Error",
-    "APP.COMMON.EXCEPTION.400": "Bad Request"
+    "APP.COMMON.EXCEPTION.500": "Internal Server Error => ${error}",
+    "APP.COMMON.EXCEPTION.400": "Bad Request ${error}"
 }

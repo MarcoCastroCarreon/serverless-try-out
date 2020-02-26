@@ -15,14 +15,6 @@ plugins:
   - serverless-webpack
   - serverless-offline
 
-provider:
-  name: aws
-  runtime: nodejs10.x
-  apiGateway:
-    minimumCompressionSize: 1024 # Enable gzip compression for responses > 1 KB
-  environment:
-    AWS_NODEJS_CONNECTION_REUSE_ENABLED: 1
-
 
 functions:
   - ${file(./src/functions/users/index.functions.yml)}
