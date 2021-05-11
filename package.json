@@ -12,7 +12,7 @@
         "class-transformer-validator": "^0.8.0",
         "class-validator": "^0.11.0",
         "lambda-proxy-utils": "^2.1.4",
-        "lodash": "^4.17.15",
+        "lodash": "^4.17.21",
         "middy": "^0.33.2",
         "moment": "^2.24.0",
         "mysql": "^2.18.1",
